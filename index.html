@@ -266,6 +266,7 @@
     .fuse-table td {
       padding: 8px 10px;
       border-bottom: 1px solid var(--border);
+    }
     .gallery {
       display: flex;
       overflow-x: auto;
@@ -446,9 +447,34 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 700px) {
-      .fuse-inner { grid-template-columns: 1fr; gap: 32px; }
-      .platforms-grid { grid-template-columns: 1fr; }
+      body { overflow-x: hidden; }
+
+      nav { padding: 0 16px; }
       .nav-links { display: none; }
+      .btn { padding: 9px 16px; font-size: 0.875rem; }
+
+      .hero { padding: 56px 16px 40px; }
+      .hero h1 { font-size: clamp(1.8rem, 8vw, 2.6rem); }
+      .hero-sub { font-size: 0.95rem; }
+      .hero-ctas { flex-direction: column; align-items: center; gap: 10px; }
+      .hero-ctas .btn { width: 100%; justify-content: center; }
+
+      .section { padding: 40px 16px; }
+
+      .feature-grid { grid-template-columns: 1fr; }
+      .audience-grid { grid-template-columns: 1fr; }
+      .pricing-grid { grid-template-columns: 1fr; }
+
+      .fuse-inner { grid-template-columns: 1fr; gap: 32px; padding: 40px 16px; }
+      .platforms-grid { grid-template-columns: 1fr; }
+
+      .stack-table-wrap { overflow-x: auto; }
+      .stack-table { min-width: 420px; }
+
+      .fuse-table-wrap { overflow-x: auto; }
+      .fuse-table { min-width: 360px; }
+
+      img.screenshot { width: 200px; height: 284px; }
     }
   </style>
 </head>
@@ -567,6 +593,7 @@
       <p>The same engine powers both the 3D Builder and the Component Arena — one source of truth, shared across platforms.</p>
     </div>
     <div>
+    <div class="fuse-table-wrap">
       <table class="fuse-table">
         <thead>
           <tr>
@@ -598,6 +625,7 @@
           </tr>
         </tbody>
       </table>
+    </div>
       <p style="margin-top:16px; font-size:0.8rem;">Visual effects include: <em>char, melt, arc, burst, blowout, vent, glow, smoke</em><br>Supports 18 component families including BJTs, MOSFETs, op-amps, relays, motors, and more.</p>
     </div>
   </div>
@@ -773,6 +801,7 @@
   <div class="section-label">Built With</div>
   <h2>Tech Stack</h2>
   <p class="section-lead">Modern, open-source technologies — fast, cross-platform, and battle-tested.</p>
+  <div class="stack-table-wrap">
   <table class="stack-table">
     <thead>
       <tr><th>Layer</th><th>Technology</th></tr>
@@ -788,6 +817,7 @@
       <tr><td>Testing</td><td>Vitest + Playwright</td></tr>
     </tbody>
   </table>
+  </div>
 </section>
 
 <!-- FOOTER -->
