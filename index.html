@@ -57,7 +57,8 @@
       letter-spacing: -0.5px;
       color: var(--text);
     }
-    .nav-brand span { color: var(--blue); }
+    .brand-try { color: var(--orange); }
+    .brand-3d  { color: var(--green); }
     .nav-links {
       display: flex;
       gap: 24px;
@@ -101,7 +102,10 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(59,130,246,0.12) 0%, transparent 70%);
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 0%,   rgba(59,130,246,0.12) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 40% at 10% 90%,  rgba(249,115,22,0.07) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 90% 90%,  rgba(34,197,94,0.07)  0%, transparent 60%);
       pointer-events: none;
     }
     .hero-eyebrow {
@@ -124,7 +128,12 @@
       line-height: 1.15;
       margin-bottom: 20px;
     }
-    .hero h1 .accent { color: var(--blue); }
+    .hero h1 .accent {
+      background: linear-gradient(90deg, var(--blue) 0%, var(--orange) 50%, var(--green) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
     .hero-sub {
       font-size: 1.1rem;
       color: var(--muted);
@@ -171,6 +180,8 @@
       color: var(--blue);
       margin-bottom: 12px;
     }
+    .section-label-orange { color: var(--orange); }
+    .section-label-green  { color: var(--green); }
     .section h2 {
       font-size: clamp(1.6rem, 3vw, 2.4rem);
       font-weight: 800;
@@ -197,8 +208,14 @@
       border-radius: var(--radius);
       padding: 28px;
       transition: border-color 0.2s, transform 0.2s;
+      border-top-width: 2px;
     }
-    .feature-card:hover { border-color: rgba(59,130,246,0.4); transform: translateY(-3px); }
+    .feature-card:nth-child(3n+1) { border-top-color: var(--blue); }
+    .feature-card:nth-child(3n+2) { border-top-color: var(--orange); }
+    .feature-card:nth-child(3n+3) { border-top-color: var(--green); }
+    .feature-card:nth-child(3n+1):hover { border-color: rgba(59,130,246,0.4);   border-top-color: var(--blue);   transform: translateY(-3px); }
+    .feature-card:nth-child(3n+2):hover { border-color: rgba(249,115,22,0.4);   border-top-color: var(--orange); transform: translateY(-3px); }
+    .feature-card:nth-child(3n+3):hover { border-color: rgba(34,197,94,0.4);    border-top-color: var(--green);  transform: translateY(-3px); }
     .feature-icon {
       font-size: 1.8rem;
       margin-bottom: 14px;
@@ -431,7 +448,8 @@
       text-align: center;
     }
     .footer-brand { font-size: 1.3rem; font-weight: 800; color: var(--text); margin-bottom: 8px; }
-    .footer-brand span { color: var(--blue); }
+    .footer-brand span.brand-try { color: var(--orange); }
+    .footer-brand span.brand-3d  { color: var(--green); }
     .footer-tagline { font-size: 0.875rem; color: var(--muted); margin-bottom: 24px; }
     .footer-links {
       display: flex;
@@ -456,7 +474,7 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-brand">Circui<span>Try</span>3D</div>
+  <div class="nav-brand">Circui<span class="brand-try">Try</span><span class="brand-3d">3D</span></div>
   <ul class="nav-links">
     <li><a href="#features">Features</a></li>
     <li><a href="#who">Who It's For</a></li>
@@ -607,7 +625,7 @@
 
 <!-- WHO IT'S FOR -->
 <section class="section" id="who">
-  <div class="section-label">Audience</div>
+  <div class="section-label section-label-orange">Audience</div>
   <h2>Built for Everyone Who Learns Differently</h2>
   <p class="section-lead">Whether you're an educator, student, manufacturer, or simply curious — CircuiTry3D meets you where you are.</p>
   <div class="audience-grid">
@@ -662,7 +680,7 @@
 
 <!-- PRICING -->
 <section class="section" id="pricing">
-  <div class="section-label">Pricing</div>
+  <div class="section-label section-label-green">Pricing</div>
   <h2>Plans &amp; Pricing</h2>
   <p class="section-lead">Choose the plan that powers your learning. Upgrade any time as your program grows.</p>
   <div class="pricing-grid">
@@ -747,7 +765,7 @@
 
 <!-- PLATFORMS -->
 <section class="section" id="platforms">
-  <div class="section-label">Platforms</div>
+  <div class="section-label section-label-orange">Platforms</div>
   <h2>Available Everywhere You Learn</h2>
   <p class="section-lead">CircuiTry3D runs on web and Android — the same features, the same FUSE™ engine, on any device.</p>
   <div class="platforms-grid">
@@ -770,7 +788,7 @@
 
 <!-- TECH STACK -->
 <section class="section">
-  <div class="section-label">Built With</div>
+  <div class="section-label section-label-green">Built With</div>
   <h2>Tech Stack</h2>
   <p class="section-lead">Modern, open-source technologies — fast, cross-platform, and battle-tested.</p>
   <table class="stack-table">
@@ -792,7 +810,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-brand">Circui<span>Try</span>3D</div>
+  <div class="footer-brand">Circui<span class="brand-try">Try</span><span class="brand-3d">3D</span></div>
   <div class="footer-tagline">Illuminating Electricity — Founded and built by Mitchell Lorin McKnight</div>
   <div class="footer-links">
     <a href="https://circuitry3d.app" target="_blank" rel="noopener">Web App</a>
