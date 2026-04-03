@@ -266,6 +266,37 @@
     .fuse-table td {
       padding: 8px 10px;
       border-bottom: 1px solid var(--border);
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 16px;
+      padding: 10px 20px 20px;
+      justify-content: flex-start;
+      scrollbar-width: thin;
+      scrollbar-color: #007bff #ddd;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .gallery::-webkit-scrollbar {
+      height: 6px;
+    }
+    .gallery::-webkit-scrollbar-thumb {
+      background: #007bff;
+      border-radius: 3px;
+    }
+    img.screenshot {
+      flex: 0 0 auto;
+      scroll-snap-align: center;
+      width: 260px;
+      height: 370px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      transition: transform 0.2s;
+    }
+    img.screenshot:hover {
+      transform: scale(1.03);
     }
     .fuse-table tr:last-child td { border-bottom: none; }
     .badge {
@@ -515,6 +546,15 @@
 </section>
 
 <hr class="divider">
+<div class="section">
+  <h2>Screenshots</h2>
+  <div class="gallery">
+    <img class="screenshot" src="https://github.com/user-attachments/assets/507e979d-779d-4f47-93e9-001a9187131c" alt="CircuiTry3D circuit board logo">
+    <img class="screenshot" src="https://github.com/user-attachments/assets/0156a834-c14b-4554-856e-dcd8c6be700e" alt="CircuiTry3D neon logo">
+    <img class="screenshot" src="https://github.com/user-attachments/assets/649478ae-8d0e-4bbc-97da-709365a186a0" alt="CircuiTry3D 3D neon letters">
+    <img class="screenshot" src="https://github.com/user-attachments/assets/0891f4ab-5504-4698-af3d-ddcbe0fc25f8" alt="CircuiTry3D stacked rings logo">
+  </div>
+</div>
 
 <!-- FUSE SPOTLIGHT -->
 <div class="fuse-section">
