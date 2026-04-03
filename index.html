@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>CircuiTry3D — Illuminating Electricity</title>
   <meta name="description" content="CircuiTry3D is a 3D interactive circuit simulation platform for students, educators, and curious learners. Build circuits, watch electrons flow, and see what happens when components fail — in real time.">
   <style>
@@ -51,13 +51,10 @@
       justify-content: space-between;
       height: 60px;
     }
-    .nav-brand {
-      font-size: 1.2rem;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      color: var(--text);
-    }
-    .nav-brand span { color: var(--blue); }
+    .nav-brand { font-size: 1.2rem; font-weight: 700; letter-spacing: -0.5px; color: var(--text); }
+    .nav-brand .brand-circui { color: var(--blue); }
+    .nav-brand .brand-try    { color: var(--orange); }
+    .nav-brand .brand-3d     { color: var(--green); }
     .nav-links {
       display: flex;
       gap: 24px;
@@ -266,39 +263,37 @@
     .fuse-table td {
       padding: 8px 10px;
       border-bottom: 1px solid var(--border);
+    }
+    .fuse-table tr:last-child td { border-bottom: none; }
+
+    /* ── SCREENSHOTS GALLERY ── */
     .gallery {
       display: flex;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
       gap: 16px;
-      padding: 10px 20px 20px;
+      padding: 10px 4px 20px;
       justify-content: flex-start;
       scrollbar-width: thin;
-      scrollbar-color: #007bff #ddd;
-      max-width: 900px;
+      scrollbar-color: var(--blue) var(--surface2);
+      max-width: 960px;
       margin: 0 auto;
+      -webkit-overflow-scrolling: touch;
     }
-    .gallery::-webkit-scrollbar {
-      height: 6px;
-    }
-    .gallery::-webkit-scrollbar-thumb {
-      background: #007bff;
-      border-radius: 3px;
-    }
+    .gallery::-webkit-scrollbar { height: 6px; }
+    .gallery::-webkit-scrollbar-thumb { background: var(--blue); border-radius: 3px; }
     img.screenshot {
       flex: 0 0 auto;
       scroll-snap-align: center;
-      width: 260px;
-      height: 370px;
+      width: 220px;
+      height: 390px;
       object-fit: cover;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      border-radius: 16px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.4);
+      border: 1px solid var(--border);
       transition: transform 0.2s;
     }
-    img.screenshot:hover {
-      transform: scale(1.03);
-    }
-    .fuse-table tr:last-child td { border-bottom: none; }
+    img.screenshot:hover { transform: scale(1.03); }
     .badge {
       display: inline-block;
       padding: 2px 8px;
@@ -431,7 +426,9 @@
       text-align: center;
     }
     .footer-brand { font-size: 1.3rem; font-weight: 800; color: var(--text); margin-bottom: 8px; }
-    .footer-brand span { color: var(--blue); }
+    .footer-brand .brand-circui { color: var(--blue); }
+    .footer-brand .brand-try    { color: var(--orange); }
+    .footer-brand .brand-3d     { color: var(--green); }
     .footer-tagline { font-size: 0.875rem; color: var(--muted); margin-bottom: 24px; }
     .footer-links {
       display: flex;
@@ -449,6 +446,45 @@
       .fuse-inner { grid-template-columns: 1fr; gap: 32px; }
       .platforms-grid { grid-template-columns: 1fr; }
       .nav-links { display: none; }
+
+      body { font-size: 15px; }
+
+      .hero { padding: 60px 16px 56px; }
+      .hero h1 { font-size: 2rem; letter-spacing: -0.5px; }
+      .hero-sub { font-size: 1rem; }
+      .hero-ctas { flex-direction: column; align-items: center; gap: 10px; }
+      .hero-ctas .btn { width: 100%; max-width: 320px; justify-content: center; font-size: 1rem; padding: 14px 20px; }
+      .wire-badge { gap: 8px; margin-top: 36px; }
+
+      nav { padding: 0 16px; }
+      nav .btn { font-size: 0.85rem; padding: 9px 14px; }
+
+      .section { padding: 56px 16px; }
+      .section h2 { font-size: 1.6rem; }
+      .section-lead { font-size: 0.95rem; }
+
+      .feature-grid { grid-template-columns: 1fr; gap: 14px; }
+      .feature-card { padding: 20px 18px; }
+
+      .audience-grid { grid-template-columns: 1fr; gap: 14px; }
+      .pricing-grid { grid-template-columns: 1fr; gap: 16px; }
+      .plan-card { padding: 24px 18px; }
+      .platform-card { padding: 24px 18px; }
+
+      .fuse-inner { padding: 48px 16px; }
+      .fuse-table { font-size: 0.8rem; }
+
+      .stack-table th, .stack-table td { padding: 10px 10px; font-size: 0.85rem; }
+
+      img.screenshot { width: 75vw; max-width: 260px; height: 133vw; max-height: 462px; aspect-ratio: 9/16; }
+      .gallery { padding: 10px 16px 20px; gap: 12px; }
+
+      footer { padding: 36px 16px 28px; }
+      .footer-links { gap: 16px; }
+    }
+
+    @media (max-width: 400px) {
+      .hero h1 { font-size: 1.75rem; }
     }
   </style>
 </head>
@@ -456,7 +492,7 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-brand">Circui<span>Try</span>3D</div>
+  <div class="nav-brand"><span class="brand-circui">Circui</span><span class="brand-try">Try</span><span class="brand-3d">3D</span></div>
   <ul class="nav-links">
     <li><a href="#features">Features</a></li>
     <li><a href="#who">Who It's For</a></li>
@@ -547,12 +583,14 @@
 
 <hr class="divider">
 <div class="section">
-  <h2>Screenshots</h2>
+  <div class="section-label">App Screenshots</div>
+  <h2>See It in Action</h2>
+  <p class="section-lead" style="margin-bottom:24px;">Real screenshots from the CircuiTry3D Android app — build circuits, trigger failures, and explore in 3D.</p>
   <div class="gallery">
-    <img class="screenshot" src="https://github.com/user-attachments/assets/507e979d-779d-4f47-93e9-001a9187131c" alt="CircuiTry3D circuit board logo">
-    <img class="screenshot" src="https://github.com/user-attachments/assets/0156a834-c14b-4554-856e-dcd8c6be700e" alt="CircuiTry3D neon logo">
-    <img class="screenshot" src="https://github.com/user-attachments/assets/649478ae-8d0e-4bbc-97da-709365a186a0" alt="CircuiTry3D 3D neon letters">
-    <img class="screenshot" src="https://github.com/user-attachments/assets/0891f4ab-5504-4698-af3d-ddcbe0fc25f8" alt="CircuiTry3D stacked rings logo">
+    <img class="screenshot" src="https://github.com/user-attachments/assets/fbe9e1bb-8e55-472d-abca-d0f94ce8870e" alt="3D resistor component close-up in CircuiTry3D">
+    <img class="screenshot" src="https://github.com/user-attachments/assets/072f5640-c017-4849-8e24-5944e07e7a6f" alt="Circuit components on wire in CircuiTry3D Build mode">
+    <img class="screenshot" src="https://github.com/user-attachments/assets/33182cff-784c-4f9a-ac93-a622a1587c2a" alt="FUSE Contact Arcing failure in CircuiTry3D">
+    <img class="screenshot" src="https://github.com/user-attachments/assets/e794ffb2-f87f-4269-980a-79e0cee5aa7c" alt="Explosion particle effects in CircuiTry3D">
   </div>
 </div>
 
@@ -697,7 +735,7 @@
         <li>Component Arena access</li>
       </ul>
       <div class="plan-cta">
-        <a class="btn btn-primary btn" href="mailto:hello@circuitry3d.com?subject=Student%20Plan%20Subscription">Subscribe</a>
+        <a class="btn btn-primary btn" href="mailto:hello@circuitry3d.app?subject=Student%20Plan%20Subscription">Subscribe</a>
       </div>
     </div>
     <div class="plan-card">
@@ -715,7 +753,7 @@
         <li>Export results as JSON</li>
       </ul>
       <div class="plan-cta">
-        <a class="btn btn-outline btn" href="mailto:hello@circuitry3d.com?subject=Educator%20License%20Subscription">Subscribe</a>
+        <a class="btn btn-outline btn" href="mailto:hello@circuitry3d.app?subject=Educator%20License%20Subscription">Subscribe</a>
       </div>
     </div>
     <div class="plan-card">
@@ -733,12 +771,12 @@
         <li>School board reporting &amp; usage analytics</li>
       </ul>
       <div class="plan-cta">
-        <a class="btn btn-outline btn" href="mailto:hello@circuitry3d.com?subject=Institutional%20Pricing">Contact Us</a>
+        <a class="btn btn-outline btn" href="mailto:hello@circuitry3d.app?subject=Institutional%20Pricing">Contact Us</a>
       </div>
     </div>
   </div>
   <p style="text-align:center; margin-top:28px; font-size:0.875rem; color:var(--muted);">
-    Need a custom package? <a href="mailto:hello@circuitry3d.com">Contact our team</a> for tailored pricing.
+    Need a custom package? <a href="mailto:hello@circuitry3d.app">Contact our team</a> for tailored pricing.
     Annual plans save 15%.
   </p>
 </section>
@@ -792,12 +830,12 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-brand">Circui<span>Try</span>3D</div>
+  <div class="footer-brand"><span class="brand-circui">Circui</span><span class="brand-try">Try</span><span class="brand-3d">3D</span></div>
   <div class="footer-tagline">Illuminating Electricity — Founded and built by Mitchell Lorin McKnight</div>
   <div class="footer-links">
     <a href="https://circuitry3d.app" target="_blank" rel="noopener">Web App</a>
     <a href="https://play.google.com/store/apps/details?id=com.circuitry3d.app" target="_blank" rel="noopener">Google Play</a>
-    <a href="mailto:hello@circuitry3d.com">Contact</a>
+    <a href="mailto:hello@circuitry3d.app">Contact</a>
     <a href="PrivacyPolicy.html">Privacy Policy</a>
   </div>
   <div class="footer-copy">© 2026 CircuiTry3D — All Rights Reserved</div>
