@@ -38,7 +38,7 @@ CircuiTry3D is a complete electrical education ecosystem available on web and An
 
 | Audience | Highlights |
 |---|---|
-| 🎓 **Educators & Institutions** | Replace lab hardware with 3D simulation; NGSS/CTE aligned; Classroom dashboard; Grade 8 → Higher Ed |
+| 🎓 **Educators & Institutions** | NGSS/CTE aligned; Classroom dashboard; Grade 8 → Higher Ed |
 | 🎒 **Students** | Full two-year EE curriculum; adaptive practice; visual electron flow; XP/badges |
 | 🏭 **Manufacturers & Retailers** | Feature real datasheets in Component Arena; FUSE™ failure cards credit manufacturer and part number |
 | 🙋 **Curious Learners** | Free Sandbox — no account, no cost; drop in a battery and LED and watch it light up instantly |
