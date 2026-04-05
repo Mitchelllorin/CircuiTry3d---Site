@@ -441,8 +441,15 @@
     .footer-links a:hover { color: var(--text); text-decoration: none; }
     .footer-copy { font-size: 0.8rem; color: var(--muted); }
 
+    .fuse-table-wrap,
+    .stack-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .fuse-table  { min-width: 360px; }
+    .stack-table { min-width: 420px; }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 700px) {
+      body { overflow-x: hidden; }
+
       .fuse-inner { grid-template-columns: 1fr; gap: 32px; }
       .platforms-grid { grid-template-columns: 1fr; }
       .nav-links { display: none; }
@@ -618,6 +625,7 @@
       <p>The same engine powers both the 3D Builder and the Component Arena — one source of truth, shared across platforms.</p>
     </div>
     <div>
+      <div class="fuse-table-wrap">
       <table class="fuse-table">
         <thead>
           <tr>
@@ -649,6 +657,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
       <p style="margin-top:16px; font-size:0.8rem;">Visual effects include: <em>char, melt, arc, burst, blowout, vent, glow, smoke</em><br>Supports 18 component families including BJTs, MOSFETs, op-amps, relays, motors, and more.</p>
     </div>
   </div>
@@ -823,6 +832,7 @@
   <div class="section-label">Built With</div>
   <h2>Tech Stack</h2>
   <p class="section-lead">Modern, open-source technologies — fast, cross-platform, and battle-tested.</p>
+  <div class="stack-table-wrap">
   <table class="stack-table">
     <thead>
       <tr><th>Layer</th><th>Technology</th></tr>
@@ -838,6 +848,7 @@
       <tr><td>Testing</td><td>Vitest + Playwright</td></tr>
     </tbody>
   </table>
+  </div>
 </section>
 
 <!-- FOOTER -->
