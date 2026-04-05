@@ -55,6 +55,21 @@
     .nav-brand .brand-circui { color: var(--blue); }
     .nav-brand .brand-try    { color: var(--orange); }
     .nav-brand .brand-3d     { color: var(--green); }
+
+    /* Logo comparison block */
+    .logo-compare { display: flex; gap: 48px; justify-content: center; flex-wrap: wrap; margin: 32px 0 8px; }
+    .logo-compare-card { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+    .logo-compare-card .logo-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); }
+    .wordmark { font-size: 2.4rem; font-weight: 800; letter-spacing: -1px; line-height: 1; }
+    .wordmark .brand-circui { color: var(--blue); }
+    .wordmark .brand-try    { color: var(--orange); }
+    .wordmark .brand-t      { color: var(--orange); }
+    .wordmark .brand-ry     { color: var(--orange); }
+    .wordmark .brand-3d     { color: var(--green); }
+    /* Option A: full "Try" slanted */
+    .wordmark.opt-a .brand-try { font-style: italic; }
+    /* Option B: only "ry" slanted, "T" stays upright */
+    .wordmark.opt-b .brand-ry  { font-style: italic; }
     .nav-links {
       display: flex;
       gap: 24px;
@@ -519,6 +534,22 @@
     <span class="wire-pill wire-i">I — Current</span>
     <span class="wire-pill wire-r">R — Resistance</span>
     <span class="wire-pill wire-e">E — Voltage</span>
+  </div>
+
+  <!-- Logo slant comparison — pick one, then remove this block -->
+  <div class="logo-compare">
+    <div class="logo-compare-card">
+      <div class="wordmark opt-a">
+        <span class="brand-circui">Circui</span><span class="brand-try">Try</span> <span class="brand-3d">3D</span>
+      </div>
+      <div class="logo-label">Option A — full "Try" italic</div>
+    </div>
+    <div class="logo-compare-card">
+      <div class="wordmark opt-b">
+        <span class="brand-circui">Circui</span><span class="brand-t">T</span><span class="brand-ry">ry</span> <span class="brand-3d">3D</span>
+      </div>
+      <div class="logo-label">Option B — "ry" italic only</div>
+    </div>
   </div>
 </section>
 
