@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Page Not Found — CircuiTry3D</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:      #07080f;
+      --surface: #0d0f1c;
+      --border:  rgba(255,255,255,0.07);
+      --text:    #e8eaf6;
+      --muted:   #8b8fa8;
+      --blue:    #3b82f6;
+      --orange:  #f97316;
+      --green:   #22c55e;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 24px;
+    }
+    .brand { font-size: 1.4rem; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 48px; }
+    .brand-circui { color: var(--blue); }
+    .brand-try    { color: var(--orange); }
+    .brand-3d     { color: var(--green); }
+    .code {
+      font-size: clamp(5rem, 20vw, 9rem);
+      font-weight: 800;
+      letter-spacing: -4px;
+      line-height: 1;
+      color: var(--blue);
+      opacity: 0.25;
+      margin-bottom: 24px;
+    }
+    h1 { font-size: clamp(1.4rem, 4vw, 2rem); font-weight: 700; margin-bottom: 12px; }
+    p  { color: var(--muted); font-size: 1rem; max-width: 420px; margin-bottom: 36px; }
+    .links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    a.btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 11px 22px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    a.btn:hover { opacity: 0.85; }
+    .btn-primary { background: var(--blue); color: #fff; }
+    .btn-outline {
+      background: transparent;
+      color: var(--text);
+      border: 1.5px solid var(--border);
+    }
+    .btn-outline:hover { border-color: var(--blue); color: var(--blue); }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      padding: 16px 24px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      background: var(--bg);
+    }
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+  <div class="brand"><span class="brand-circui">Circui</span><span class="brand-try">Try</span><span class="brand-3d">3D</span></div>
+  <div class="code">404</div>
+  <h1>Page Not Found</h1>
+  <p>The page you're looking for doesn't exist or may have been moved. Let's get you back on track.</p>
+  <div class="links">
+    <a class="btn btn-primary" href="/">Back to Home</a>
+    <a class="btn btn-outline" href="mailto:hello@circuitry3d.app">Contact Us</a>
+  </div>
+  <footer>
+    <a href="/">CircuiTry3D</a> &nbsp;&middot;&nbsp;
+    <a href="/PrivacyPolicy.html">Privacy Policy</a> &nbsp;&middot;&nbsp;
+    <a href="mailto:hello@circuitry3d.app">hello@circuitry3d.app</a>
+  </footer>
+</body>
+</html>
