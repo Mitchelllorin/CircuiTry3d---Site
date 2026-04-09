@@ -93,6 +93,6 @@ Annual plans save 15%. For custom packages, contact [hello@circuitry3d.app](mail
 - **Founder:** Mitchell Lorin McKnight
 - **General:** [hello@circuitry3d.app](mailto:hello@circuitry3d.app)
 - **Privacy:** [privacy@circuitry3d.app](mailto:privacy@circuitry3d.app)
-- **Privacy Policy:** [PrivacyPolicy.html](PrivacyPolicy.html) · [circuitry3d.app/privacy](https://circuitry3d.app/privacy)
+- **Privacy Policy:** [PrivacyPolicy.html](PrivacyPolicy.html) · [circuitry3d.net/PrivacyPolicy.html](https://www.circuitry3d.net/PrivacyPolicy.html)
 
 © 2026 CircuiTry3D — All Rights Reserved
