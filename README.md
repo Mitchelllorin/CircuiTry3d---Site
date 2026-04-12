@@ -15,6 +15,8 @@ This repo hosts the **CircuiTry3D marketing site** — a static HTML/CSS landing
 |------|-------------|
 | `index.html` | Main landing page — features, pricing, platforms, tech stack |
 | `PrivacyPolicy.html` | Full privacy policy for the web and Android app |
+| `privacy/index.html` | Privacy Policy served at [circuitry3d.net/privacy](https://www.circuitry3d.net/privacy) |
+| `datasafety/index.html` | Data Safety disclosure served at [circuitry3d.net/datasafety](https://www.circuitry3d.net/datasafety) |
 
 ---
 
@@ -92,6 +94,7 @@ Visual effects include: *char, melt, arc, burst, blowout, vent, glow, smoke*. Su
 - **Founder:** Mitchell Lorin McKnight
 - **General:** [hello@circuitry3d.app](mailto:hello@circuitry3d.app)
 - **Privacy:** [privacy@circuitry3d.app](mailto:privacy@circuitry3d.app)
-- **Privacy Policy:** [PrivacyPolicy.html](PrivacyPolicy.html) · [circuitry3d.net/PrivacyPolicy.html](https://www.circuitry3d.net/PrivacyPolicy.html)
+- **Privacy Policy:** [circuitry3d.net/privacy](https://www.circuitry3d.net/privacy)
+- **Data Safety:** [circuitry3d.net/datasafety](https://www.circuitry3d.net/datasafety)
 
 © 2026 CircuiTry3D — All Rights Reserved
