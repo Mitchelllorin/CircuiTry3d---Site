@@ -80,9 +80,9 @@ Visual effects include: *char, melt, arc, burst, blowout, vent, glow, smoke*. Su
 | Plan | Price | Key Features |
 |---|---|---|
 | **Free Sandbox** | Free — no account required | 3 active circuits, limited component set, W.I.R.E. preview, FUSE™ severity badge — upgrade anytime for full access |
-| **Premium — One-Time Unlock** | $4.99 forever | Everything, always — full component library, FUSE™ full effects, Component Arena, unlimited circuits |
-| **Premium — Monthly** | $2.50 / month | Same full access, billed monthly |
-| **Premium — Annual** | $20 / year *(save 33%)* | Same full access, billed annually |
+| **Premium — One-Time Unlock** | $6.99 forever | Everything, always — full component library, FUSE™ full effects, Component Arena, unlimited circuits |
+| **Premium — Monthly** | $1.50 / month | Same full access, billed monthly |
+| **Premium — Annual** | $14.99 / year *(save ~17%)* | Same full access, billed annually |
 | **Educator & Institutional** | [Get in touch](mailto:hello@circuitry3d.app) | Classroom Mode, roster management, SSO, SIS integrations, school board reporting, and priority support — tailored to your school or organization |
 
 ---
