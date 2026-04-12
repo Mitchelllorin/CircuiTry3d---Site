@@ -2,7 +2,7 @@
 
 > **CircuiTry3D** is a 3D interactive circuit simulation platform that makes electricity visual — from macro current flow all the way down to quantum probability clouds. Build, simulate, and learn by doing.
 
-🌐 **Web App:** [circuitry3d.app](https://circuitry3d.app)  
+🌐 **Web App:** [circuitry3d.net](https://circuitry3d.net)  
 📱 **Android:** [Google Play](https://play.google.com/store/apps/details?id=com.circuitry3d.app)
 
 ---
@@ -84,15 +84,15 @@ Visual effects include: *char, melt, arc, burst, blowout, vent, glow, smoke*. Su
 | **Educator License** | $29/month or $299/year | Unlimited circuits, Classroom Mode, lesson templates, priority support |
 | **Institutional License** | Custom (10+ seats) | Bulk seats, SSO, SIS integrations, school board reporting |
 
-Annual plans save 15%. For custom packages, contact [hello@circuitry3d.app](mailto:hello@circuitry3d.app).
+Annual plans save 15%. For custom packages, contact [hello@circuitry3d.net](mailto:hello@circuitry3d.net).
 
 ---
 
 ## Contact & Legal
 
 - **Founder:** Mitchell Lorin McKnight
-- **General:** [hello@circuitry3d.app](mailto:hello@circuitry3d.app)
-- **Privacy:** [privacy@circuitry3d.app](mailto:privacy@circuitry3d.app)
-- **Privacy Policy:** [PrivacyPolicy.html](PrivacyPolicy.html) · [circuitry3d.app/privacy](https://circuitry3d.app/privacy)
+- **General:** [hello@circuitry3d.net](mailto:hello@circuitry3d.net)
+- **Privacy:** [privacy@circuitry3d.net](mailto:privacy@circuitry3d.net)
+- **Privacy Policy:** [PrivacyPolicy.html](PrivacyPolicy.html) · [circuitry3d.net/privacy](https://circuitry3d.net/privacy)
 
 © 2026 CircuiTry3D — All Rights Reserved
