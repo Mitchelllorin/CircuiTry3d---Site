@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Safety - CircuiTry3D</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #07080f;
+      color: #e8eaf6;
+      line-height: 1.7;
+    }
+    a { color: #3b82f6; }
+    .back { display: inline-block; margin-bottom: 32px; font-size: 0.875rem; color: #8b8fa8; text-decoration: none; }
+    .back:hover { color: #e8eaf6; }
+    h1 { font-size: 2rem; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 8px; }
+    .meta { font-size: 0.875rem; color: #8b8fa8; margin-bottom: 40px; }
+    h2 { font-size: 1.1rem; font-weight: 700; margin: 36px 0 10px; color: #e8eaf6; }
+    h3 { font-size: 0.95rem; font-weight: 700; margin: 20px 0 8px; color: #cbd5e1; }
+    p { color: #a1a9c3; margin-bottom: 12px; font-size: 0.93rem; }
+    ul { color: #a1a9c3; padding-left: 20px; margin-bottom: 12px; font-size: 0.93rem; }
+    li { margin-bottom: 6px; }
+    .divider { border: none; border-top: 1px solid rgba(255,255,255,0.07); margin: 40px 0; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 0.93rem; color: #a1a9c3; }
+    th { text-align: left; padding: 8px 12px; border-bottom: 1px solid rgba(255,255,255,0.12); color: #e8eaf6; font-weight: 700; }
+    td { padding: 8px 12px; border-bottom: 1px solid rgba(255,255,255,0.05); vertical-align: top; }
+    .yes { color: #22c55e; font-weight: 600; }
+    .no  { color: #8b8fa8; }
+  </style>
+</head>
+<body>
+  <a class="back" href="../index.html">&larr; Back to CircuiTry3D</a>
+
+  <h1>Data Safety</h1>
+  <p class="meta"><strong>Effective Date:</strong> October 25, 2025 &nbsp;&middot;&nbsp; <strong>Last Updated:</strong> April 12, 2026</p>
+
+  <p>This page explains what data CircuiTry3D collects, why it is collected, how it is handled, and your rights regarding that data. It mirrors the disclosures made in our <a href="https://play.google.com/store/apps/details?id=com.circuitry3d.app">Google Play Data Safety</a> section and is kept in sync across our app, site, and repository.</p>
+
+  <hr class="divider">
+
+  <h2>Data Collection Summary</h2>
+  <p>The table below summarizes every category of data that CircuiTry3D may collect.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Data Type</th>
+        <th>Collected</th>
+        <th>Purpose</th>
+        <th>Shared with Third Parties</th>
+        <th>Encrypted in Transit</th>
+        <th>User Can Request Deletion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Email address</td>
+        <td class="yes">Yes</td>
+        <td>Account registration, authentication, password recovery, service updates</td>
+        <td class="no">No</td>
+        <td class="yes">Yes</td>
+        <td class="yes">Yes</td>
+      </tr>
+      <tr>
+        <td>Purchase history &amp; transaction IDs</td>
+        <td class="yes">Yes</td>
+        <td>Subscription management, customer support</td>
+        <td class="no">No (processed by Google Play Billing)</td>
+        <td class="yes">Yes</td>
+        <td class="yes">Yes</td>
+      </tr>
+      <tr>
+        <td>App usage data &amp; circuit designs</td>
+        <td class="yes">Yes (account users)</td>
+        <td>Saving projects, feature improvement, usage analytics</td>
+        <td class="no">No</td>
+        <td class="yes">Yes</td>
+        <td class="yes">Yes</td>
+      </tr>
+      <tr>
+        <td>Authentication tokens</td>
+        <td class="yes">Yes</td>
+        <td>Maintaining login state</td>
+        <td class="no">No</td>
+        <td class="yes">Yes</td>
+        <td class="yes">Yes — on logout or account deletion</td>
+      </tr>
+      <tr>
+        <td>Classroom roster data (teachers only)</td>
+        <td class="yes">Yes — opt-in</td>
+        <td>Classroom Mode sync via Upstash Redis</td>
+        <td class="no">No</td>
+        <td class="yes">Yes</td>
+        <td class="yes">Yes</td>
+      </tr>
+      <tr>
+        <td>Diagnostic &amp; crash data</td>
+        <td class="yes">Yes — anonymized</td>
+        <td>App stability and bug fixes</td>
+        <td class="no">No</td>
+        <td class="yes">Yes</td>
+        <td class="no">No (anonymized; cannot be linked to a user)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr class="divider">
+
+  <h2>Free Sandbox (No Account Required)</h2>
+  <p>The Free Sandbox mode requires no account and collects no personal information. All circuit designs are saved locally on your device and are never transmitted to our servers.</p>
+
+  <hr class="divider">
+
+  <h2>Data Sharing</h2>
+  <p>CircuiTry3D does <strong>not</strong> sell your personal data to third parties. Data may be processed by the following service providers solely to operate the app:</p>
+  <ul>
+    <li><strong>Google Play Billing</strong> — payment processing for in-app purchases and subscriptions</li>
+    <li><strong>Upstash Redis</strong> — cloud sync for Classroom Mode (only when that feature is enabled by a teacher)</li>
+    <li><strong>Anonymized analytics</strong> — aggregated, non-identifiable usage metrics to improve app performance</li>
+  </ul>
+  <p>Each provider is bound by their own data processing agreements and privacy policies.</p>
+
+  <hr class="divider">
+
+  <h2>Data Security</h2>
+  <ul>
+    <li>All personal data is encrypted in transit (TLS) and at rest</li>
+    <li>Authentication tokens are stored securely using industry-standard practices</li>
+    <li>We implement appropriate technical and organizational measures to protect your data</li>
+    <li>Access to user data is restricted to authorized personnel only</li>
+  </ul>
+
+  <hr class="divider">
+
+  <h2>Data Retention</h2>
+  <p>We retain your data for as long as your account is active or as needed to provide services. You may request deletion of your account and all associated data at any time through the <code>/delete-account</code> flow inside the app or by contacting us directly.</p>
+
+  <hr class="divider">
+
+  <h2>Your Rights</h2>
+  <p>Depending on your jurisdiction, you may have the following rights regarding your personal data:</p>
+  <ul>
+    <li><strong>Access</strong> — request a copy of the data we hold about you</li>
+    <li><strong>Correction</strong> — request correction of inaccurate data</li>
+    <li><strong>Deletion</strong> — request deletion of your account and all associated data</li>
+    <li><strong>Portability</strong> — export your circuit designs and app data</li>
+    <li><strong>Opt-out</strong> — opt out of non-essential data collection</li>
+  </ul>
+  <p>To exercise any of these rights, contact us at: <a href="mailto:privacy@circuitry3d.app">privacy@circuitry3d.app</a></p>
+
+  <hr class="divider">
+
+  <h2>Children&rsquo;s Data</h2>
+  <p>CircuiTry3D is designed for educational purposes and is appropriate for users of all ages. We do not knowingly collect personal information from children under 13 without verifiable parental consent. Classroom Mode operates under teacher supervision, and student data is processed only as directed by the educator. Contact us immediately at <a href="mailto:privacy@circuitry3d.app">privacy@circuitry3d.app</a> if you believe we have inadvertently collected a child&rsquo;s data.</p>
+
+  <hr class="divider">
+
+  <h2>Compliance</h2>
+  <p>Our data practices are designed to comply with:</p>
+  <ul>
+    <li>Google Play Developer Program Policies &amp; Data Safety requirements</li>
+    <li>General Data Protection Regulation (GDPR)</li>
+    <li>California Consumer Privacy Act (CCPA)</li>
+    <li>Children&rsquo;s Online Privacy Protection Act (COPPA)</li>
+    <li>Family Educational Rights and Privacy Act (FERPA) — for Classroom Mode</li>
+  </ul>
+
+  <hr class="divider">
+
+  <h2>Contact</h2>
+  <p>
+    <strong>Mitchell Lorin McKnight</strong> — Founder &amp; Data Controller<br>
+    Email: <a href="mailto:privacy@circuitry3d.app">privacy@circuitry3d.app</a><br>
+    Privacy Policy: <a href="https://www.circuitry3d.net/privacy" target="_blank" rel="noopener">www.circuitry3d.net/privacy</a><br>
+    Data Safety: <a href="https://www.circuitry3d.net/datasafety" target="_blank" rel="noopener">www.circuitry3d.net/datasafety</a>
+  </p>
+</body>
+</html>
