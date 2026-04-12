@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - CircuiTry3D</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #07080f;
+      --surface:  #0d0f1c;
+      --surface2: #12152a;
+      --border:   rgba(255,255,255,0.07);
+      --text:     #e8eaf6;
+      --muted:    #8b8fa8;
+      --blue:     #3b82f6;
+      --radius:   12px;
+    }
+
+    body {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .back { display: inline-block; margin-bottom: 32px; font-size: 0.875rem; color: var(--muted); text-decoration: none; }
+    .back:hover { color: var(--text); text-decoration: none; }
+
+    .section-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 8px; }
+    h1 { font-size: 2rem; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 12px; }
+    .section-lead { font-size: 1.05rem; color: var(--muted); margin-bottom: 40px; }
+
+    /* Contact grid */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-bottom: 32px;
+    }
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .contact-card:hover { border-color: rgba(59,130,246,0.4); transform: translateY(-3px); }
+    .contact-card .contact-icon { font-size: 1.8rem; margin-bottom: 14px; }
+    .contact-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+    .contact-card p { font-size: 0.85rem; color: var(--muted); margin-bottom: 14px; }
+    .contact-card a { font-size: 0.875rem; font-weight: 600; }
+    .contact-cta-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      text-align: center;
+    }
+    .contact-cta-box p { color: var(--muted); font-size: 0.95rem; margin-bottom: 16px; }
+
+    /* Button */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 22px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.15s;
+      white-space: nowrap;
+    }
+    .btn:hover { opacity: 0.88; transform: translateY(-1px); text-decoration: none; }
+    .btn-primary { background: var(--blue); color: #fff; }
+  </style>
+</head>
+<body>
+  <a class="back" href="../index.html">&larr; Back to CircuiTry3D</a>
+
+  <div class="section-label">Get In Touch</div>
+  <h1>Contact Us</h1>
+  <p class="section-lead">Questions, feedback, educator inquiries, or partnership opportunities &mdash; we want to hear from you.</p>
+
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="contact-icon">👋</div>
+      <h3>General Inquiries</h3>
+      <p>Questions about the app, features, or anything else? Drop us a line and we&rsquo;ll get back to you promptly.</p>
+      <a href="mailto:hello@circuitry3d.net">hello@circuitry3d.net</a>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">🎓</div>
+      <h3>Educators &amp; Institutions</h3>
+      <p>Interested in an Educator License or Institutional package? Let&rsquo;s talk about how we can support your program.</p>
+      <a href="mailto:hello@circuitry3d.net?subject=Educator%20Inquiry">Start a Conversation</a>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">🔒</div>
+      <h3>Privacy &amp; Data</h3>
+      <p>For questions about our Privacy Policy, data requests, or account deletion, contact our data team directly.</p>
+      <a href="mailto:privacy@circuitry3d.net">privacy@circuitry3d.net</a>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">🤝</div>
+      <h3>Partnerships &amp; Press</h3>
+      <p>Interested in featuring CircuiTry3D, partnering on curriculum, or listing your components in the Arena?</p>
+      <a href="mailto:hello@circuitry3d.net?subject=Partnership%20Inquiry">Get in Touch</a>
+    </div>
+  </div>
+  <div class="contact-cta-box">
+    <p>We&rsquo;re an independent team &mdash; we read every message and aim to respond within 1&ndash;2 business days.</p>
+    <a class="btn btn-primary" href="mailto:hello@circuitry3d.net">Send Us an Email</a>
+  </div>
+</body>
+</html>
