@@ -505,6 +505,62 @@
     .footer-links a:hover { color: var(--text); text-decoration: none; }
     .footer-copy { font-size: 0.8rem; color: var(--muted); }
 
+    /* ── PROMO GALLERY ── */
+    .promo-gallery {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 20px;
+      padding: 10px 4px 24px;
+      scrollbar-width: thin;
+      scrollbar-color: var(--orange) var(--surface2);
+      max-width: 960px;
+      margin: 0 auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .promo-gallery::-webkit-scrollbar { height: 6px; }
+    .promo-gallery::-webkit-scrollbar-thumb { background: var(--orange); border-radius: 3px; }
+
+    .promo-card {
+      flex: 0 0 auto;
+      scroll-snap-align: center;
+      width: 480px;
+      aspect-ratio: 16 / 9;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: 0 6px 24px rgba(0,0,0,0.4);
+      overflow: hidden;
+      transition: transform 0.2s;
+      background: var(--surface2);
+    }
+    .promo-card:hover { transform: scale(1.02); }
+    .promo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .promo-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      border: 2px dashed rgba(249,115,22,0.35);
+      border-radius: var(--radius);
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-align: center;
+      padding: 24px;
+    }
+    .promo-placeholder .promo-plus {
+      font-size: 2rem;
+      color: var(--orange);
+      opacity: 0.6;
+    }
+
     .fuse-table-wrap,
     .stack-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
     .fuse-table  { min-width: 360px; }
@@ -552,6 +608,9 @@
       img.screenshot { width: 75vw; max-width: 260px; height: 133vw; max-height: 462px; aspect-ratio: 9/16; }
       .gallery { padding: 10px 16px 20px; gap: 12px; }
 
+      .promo-card { width: 82vw; max-width: 360px; }
+      .promo-gallery { padding: 10px 16px 20px; gap: 14px; }
+
       footer { padding: 36px 16px 28px; }
       .footer-links { gap: 16px; }
     }
@@ -568,6 +627,7 @@
   <div class="nav-brand"><span class="brand-circui">Circui</span><span class="brand-try">Try</span><span class="brand-3d">3D</span></div>
   <ul class="nav-links">
     <li><a href="#features">Features</a></li>
+    <li><a href="#promos">Promos</a></li>
     <li><a href="#who">Who It's For</a></li>
     <li><a href="#pricing">Pricing</a></li>
     <li><a href="#platforms">Platforms</a></li>
@@ -681,6 +741,37 @@
     <img class="screenshot" src="https://github.com/user-attachments/assets/897d57d8-9423-456b-b015-251b188f08e8" alt="CT3D flat circuit diagram logo concept">
   </div>
 </div>
+
+<hr class="divider">
+
+<!-- PROMO GALLERY -->
+<section class="section" id="promos">
+  <div class="section-label">Promotions</div>
+  <h2>Promo Gallery</h2>
+  <p class="section-lead" style="margin-bottom:24px;">Official promos and feature highlights for CircuiTry3D — from app store banners to launch campaigns.</p>
+  <div class="promo-gallery">
+    <!-- Add promo images by replacing the placeholder divs below with:
+         <div class="promo-card"><img src="YOUR_IMAGE_URL" alt="Promo description"></div> -->
+    <div class="promo-card">
+      <div class="promo-placeholder">
+        <div class="promo-plus">＋</div>
+        <span>Promo coming soon</span>
+      </div>
+    </div>
+    <div class="promo-card">
+      <div class="promo-placeholder">
+        <div class="promo-plus">＋</div>
+        <span>Promo coming soon</span>
+      </div>
+    </div>
+    <div class="promo-card">
+      <div class="promo-placeholder">
+        <div class="promo-plus">＋</div>
+        <span>Promo coming soon</span>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- FUSE SPOTLIGHT -->
 <div class="fuse-section">
