@@ -9,7 +9,7 @@
 
 ## About This Repository
 
-This repo hosts the **CircuiTry3D marketing site** — a static HTML/CSS landing page deployed to GitHub Pages. It includes:
+This repo hosts the **CircuiTry3D marketing site** — a static HTML/CSS landing page deployed to Vercel and served at [circuitry3d.net](https://www.circuitry3d.net) via Webador DNS. It includes:
 
 | File | Description |
 |------|-------------|
@@ -72,7 +72,7 @@ Visual effects include: *char, melt, arc, burst, blowout, vent, glow, smoke*. Su
 | Mobile | Capacitor 7 |
 | Routing | React Router DOM 7 |
 | Backend / API | GitHub Actions + Upstash Redis |
-| Deployment | GitHub Pages (web) · Google Play Store (Android) |
+| Deployment | Vercel (web, circuitry3d.net via Webador DNS) · Google Play Store (Android) |
 | Testing | Vitest + Playwright |
 
 ---
