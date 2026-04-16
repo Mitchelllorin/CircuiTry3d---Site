@@ -749,28 +749,8 @@
   <div class="section-label">Promotions</div>
   <h2>Promo Gallery</h2>
   <p class="section-lead" style="margin-bottom:24px;">Official promos and feature highlights for CircuiTry3D — from app store banners to launch campaigns.</p>
-  <div class="promo-gallery">
-    <!-- Add promo images by replacing the placeholder divs below with:
-         <div class="promo-card"><img src="YOUR_IMAGE_URL" alt="Promo description"></div> -->
-    <div class="promo-card">
-      <div class="promo-placeholder">
-        <div class="promo-plus">＋</div>
-        <span>Promo coming soon</span>
-      </div>
-    </div>
-    <div class="promo-card">
-      <div class="promo-placeholder">
-        <div class="promo-plus">＋</div>
-        <span>Promo coming soon</span>
-      </div>
-    </div>
-    <div class="promo-card">
-      <div class="promo-placeholder">
-        <div class="promo-plus">＋</div>
-        <span>Promo coming soon</span>
-      </div>
-    </div>
-  </div>
+  <!-- Populated by the PROMOS array in the <script> below. See README for instructions. -->
+  <div class="promo-gallery" id="promo-gallery"></div>
 </section>
 
 <!-- FUSE SPOTLIGHT -->
@@ -1112,6 +1092,44 @@
   </div>
   <div class="footer-copy">© 2026 CircuiTry3D — All Rights Reserved</div>
 </footer>
+
+<script>
+  // ─── PROMO GALLERY ──────────────────────────────────────────────────────────
+  // To add a promo: append an object to the PROMOS array below, then save.
+  //   { src: "IMAGE_URL", alt: "Short description of the promo" }
+  //
+  // Get IMAGE_URL by dragging an image into any GitHub issue or PR comment box,
+  // copying the generated URL (starts with https://github.com/user-attachments/),
+  // then discarding the draft — the URL stays live.
+  // ────────────────────────────────────────────────────────────────────────────
+  const PROMOS = [
+    // { src: "https://github.com/user-attachments/assets/REPLACE_ME", alt: "Launch banner" },
+  ];
+
+  (function renderPromos() {
+    var gallery = document.getElementById('promo-gallery');
+    if (!gallery) return;
+    if (PROMOS.length === 0) {
+      for (var i = 0; i < 3; i++) {
+        var card = document.createElement('div');
+        card.className = 'promo-card';
+        card.innerHTML = '<div class="promo-placeholder"><div class="promo-plus">＋</div><span>Promo coming soon</span></div>';
+        gallery.appendChild(card);
+      }
+    } else {
+      PROMOS.forEach(function(promo) {
+        if (typeof promo.src !== 'string' || !promo.src.startsWith('https://')) return;
+        var card = document.createElement('div');
+        card.className = 'promo-card';
+        var img = document.createElement('img');
+        img.src = promo.src;
+        img.alt = typeof promo.alt === 'string' ? promo.alt : '';
+        card.appendChild(img);
+        gallery.appendChild(card);
+      });
+    }
+  })();
+</script>
 
 </body>
 </html>

@@ -89,6 +89,53 @@ Visual effects include: *char, melt, arc, burst, blowout, vent, glow, smoke*. Su
 
 ---
 
+## Updating the Site
+
+### Adding a Promo to the Gallery
+
+The Promo Gallery in `index.html` is driven by a plain JavaScript array near the bottom of the file.  
+To add a new promo you only need to touch **one array** — no HTML changes required.
+
+**Step 1 — Get a hosted image URL**
+
+The quickest way to host an image for free is through GitHub's own CDN:
+
+1. Open any GitHub **Issue or Pull Request** comment box in this repo (you can use a draft — no need to submit it).
+2. Drag-and-drop (or paste) your image into the text area.
+3. GitHub instantly uploads it and inserts a Markdown snippet like:
+   ```
+   ![image](https://github.com/user-attachments/assets/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)
+   ```
+4. Copy the URL from that snippet. You can now close or discard the issue/PR — the URL stays live.
+
+**Step 2 — Add the entry**
+
+Open `index.html` and find the `PROMOS` array near the bottom (search for `PROMO GALLERY`).  
+Add one line inside the array brackets:
+
+```js
+const PROMOS = [
+  { src: "https://github.com/user-attachments/assets/YOUR_ID_HERE", alt: "Brief description of this promo" },
+];
+```
+
+Save and push — the gallery renders automatically.
+
+---
+
+### Adding App Screenshots or Brand Art
+
+Screenshots and brand images are plain `<img>` tags inside `.gallery` divs in `index.html`.
+
+1. Get a hosted URL using the same drag-and-drop trick described above.
+2. Find the relevant `<div class="gallery">` block (search for `App Screenshots` or `Brand Art`).
+3. Add a new line:
+   ```html
+   <img class="screenshot" src="YOUR_URL" alt="Short description">
+   ```
+
+---
+
 ## Contact & Legal
 
 - **Founder:** Mitchell Lorin McKnight
