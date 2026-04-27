@@ -85,7 +85,7 @@ Visual effects include: *char, melt, arc, burst, blowout, vent, glow, smoke*. Su
 | **Premium — One-Time Unlock** | $6.99 forever | Everything, always — full component library, FUSE™ full effects, Component Arena, unlimited circuits |
 | **Premium — Monthly** | $1.50 / month | Same full access, billed monthly |
 | **Premium — Annual** | $14.99 / year *(save ~17%)* | Same full access, billed annually |
-| **Educator & Institutional** | [Get in touch](mailto:circuitry3dsim@gmail.com) | Classroom Mode, roster management, SSO, SIS integrations, school board reporting, and priority support — tailored to your school or organization |
+| **Educator & Institutional** | Contact us | Classroom Mode, roster management, SSO, SIS integrations, school board reporting, and priority support — tailored to your school or organization |
 
 ---
 
@@ -139,7 +139,6 @@ Screenshots and brand images are plain `<img>` tags inside `.gallery` divs in `i
 ## Contact & Legal
 
 - **Founder:** Mitchell Lorin McKnight
-- **General:** [circuitry3dsim@gmail.com](mailto:circuitry3dsim@gmail.com)
 - **Privacy:** [circuitry3dsim@gmail.com](mailto:circuitry3dsim@gmail.com)
 - **Privacy Policy:** [circuitry3d.net/privacy](https://www.circuitry3d.net/privacy)
 - **Data Safety:** [circuitry3d.net/datasafety](https://www.circuitry3d.net/datasafety)
